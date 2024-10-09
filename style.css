@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #8f8686;
+    text-align: center;
+    padding: 60px;
+}
+
+.tudo{
+    background-color: #f6f3f1e3;
+    border-radius: 7px;
+    padding: 5%;
+    margin: 0 auto;
+    width: 60%;
+}
+
+h1 {
+    color: #161cc4;
+    display: flex;
+}
+
+.posta {
+    display: flex;
+    align-items: center; 
+    margin-top: 20px;
+}
+
+.perfil {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #bdb7b7;
+    width: 100%;
+    height: 40px;
+}
+
+input::placeholder {
+    color: #000000b2;
+}
+
+.icons {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    gap: 80px;
+}
+
+p {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+}
+
+p .bi-images {
+    margin-left: 40px;
+    border: 1px solid #040414cb;
+    border-radius: 20px;
+}
+
+.option{
+    align-items: center;
+    cursor: pointer;
+  
+}
+.post{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #a4a4a4;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #e8e0dc;
+    display: flex;
+}
+
+.post p{
+    cursor: auto;
+    padding: 15px;
+    width: 70%;    
+}
+
+#postImage{
+  display: none;
+  
+}
+
+.cam {
+    color: rgb(250, 52, 52);
+    margin-right: 5px;
+    align-items: start;
+}
+
+
+.bi-images {
+    color: #33c1ff;
+    margin-right: 5px;
+}
+
+.bi-emoji-smile {
+    color: #4caf50;
+    margin-right: 5px;
+}
+
+.botao {
+    background-color: #2d1fca;
+    color: #e8e0dc;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 12px auto; 
+    width: 90%; 
+    text-align: center; 
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.botao:hover {
+    background-color: #4542f9;
+    color: rgb(255, 255, 255);
+    transition: 0.3s
+}
+
+img {
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+}
+
+button {
+    background-color: #9d9d9d; 
+    color: #464646; 
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;  
+    padding: 8px;  
+    border: none; 
+}
+
+button:hover {
+    background-color: #ff0101; 
+    color: #e2d9a4;
+    transition: 0.3s;
+}
+
+@media (max-width: 500px) {
+    body, input, button{
+        font-size: 15px;
+    }
+}
