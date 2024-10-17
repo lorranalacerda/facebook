@@ -12,10 +12,10 @@ body {
     padding: 60px;
 }
 
-.tudo{
+.tudo {
     background-color: #f6f3f1e3;
     border-radius: 7px;
-    padding: 5%;
+    padding: 20px;
     margin: 0 auto;
     width: 60%;
 }
@@ -55,7 +55,7 @@ input::placeholder {
     display: flex;
     margin: 20px;
     justify-content: center;
-    gap: 80px;
+    gap: 20px; 
 }
 
 p {
@@ -70,31 +70,32 @@ p .bi-images {
     border-radius: 20px;
 }
 
-.option{
+.option {
     align-items: center;
     cursor: pointer;
-  
 }
-.post{
+
+.post {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
     margin-top: 20px;
     margin-bottom: 20px;
     border: 1px solid #a4a4a4;
     padding: 10px;
     border-radius: 5px;
-    position: relative;
     background-color: #e8e0dc;
-    display: flex;
 }
 
-.post p{
+.post p {
     cursor: auto;
     padding: 15px;
-    width: 70%;    
+    width: 80%; 
+    align-self: flex-start;
 }
 
-#postImage{
-  display: none;
-  
+#postImage {
+    display: none;
 }
 
 .cam {
@@ -102,7 +103,6 @@ p .bi-images {
     margin-right: 5px;
     align-items: start;
 }
-
 
 .bi-images {
     color: #33c1ff;
@@ -130,7 +130,7 @@ p .bi-images {
 .botao:hover {
     background-color: #4542f9;
     color: rgb(255, 255, 255);
-    transition: 0.3s
+    transition: 0.3s;
 }
 
 img {
@@ -139,24 +139,62 @@ img {
     max-width: 100%;
 }
 
-button {
+.remove-button {
     background-color: #9d9d9d; 
     color: #464646; 
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    width: 20%;  
+    width: 10%;  
     padding: 8px;  
     border: none; 
+    align-self: flex-end; 
+    position: absolute;
 }
 
-button:hover {
+.remove-button:hover {
     background-color: #ff0101; 
     color: #e2d9a4;
     transition: 0.3s;
 }
 
+.reações {
+    display: flex;
+    gap: 5px;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 5px 10px;
+  }
+  
+  .reaction {
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .reaction:hover {
+    transform: scale(1.5);
+  }
+  
+  .selected-reaction {
+    margin-top: 20px;
+    font-size: 18px;
+    
+  }
+
 @media (max-width: 500px) {
-    body, input, button{
+    body, input, button {
         font-size: 15px;
+    }
+
+    .tudo {
+        width: 90%;
+    }
+    
+    .post {
+        padding: 10px; 
+    }
+
+    .remove-button {
+        width: 100%;
     }
 }
